@@ -80,7 +80,6 @@ model1.int = glmer(Response ~ 1 + (1|Sub.ID), data = list_items, family = "binom
 #compare models
 bayestestR::bayesfactor_models(model1, denominator = model1.int)
 
-
 #final model output
 summary(model1)
 Anova(model1, type = "III")
